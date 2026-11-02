@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+    <title>Pose Detection</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/pose@latest"></script>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+            background:#111;
+            color:white;
+            text-align:center;
+        }
+
+        h2{
+            margin:20px;
+        }
+
+        canvas{
+            width:95vw;
+            max-width:450px;
+            height:auto;
+            border-radius:15px;
+        }
+
+        button{
+            margin:20px;
+            padding:15px 35px;
+            font-size:18px;
+            border:none;
+            border-radius:12px;
+            background:#2196F3;
+            color:white;
+        }
+
+        #label-container{
+            font-size:20px;
+            margin-top:15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Pose Detection</h2>
+
+<button onclick="init()">Start Camera</button>
+
+<br>
+
+<canvas id="canvas"></canvas>
+
+<div id="label-container"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
